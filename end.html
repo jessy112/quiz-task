@@ -9,12 +9,17 @@
   <body>
     <div class="container">
       <div id="end" class="flex-center flex-column">
+        <h1>congratulations!!!</h1>
+        <h3>your score is</h3>
         <h1 id="finalScore">0</h1>
           <a href="./game.html" class="btn">Play Again</a>
           <a href="./index.html" class="btn">Go Home</a>
         </form>
       </div>
     </div>
+    const finalScore = document.getElementById("finalScore");
+      finalScore.innerText = localStorage.getItem("mostRecentScore");
+</script>
     <script src=".game.js"></script>
   </body>
 </html>
